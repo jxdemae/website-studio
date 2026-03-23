@@ -253,23 +253,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Booking form ───────────────────────────────────────── */
   const form = document.querySelector('.booking-form form');
-  form?.addEventListener('submit', e => {
+  form?.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
-    btn.textContent = 'Envoyé ✓';
-    btn.style.background = '#2d6a3f';
+    const originalText = btn.textContent;
+    btn.textContent = 'Envoi en cours…';
     btn.disabled = true;
 
-    // In production: send to backend / Formspree / etc.
-    // For now, open mailto as fallback
-    const name    = form.querySelector('[name=name]')?.value || '';
-    const email   = form.querySelector('[name=email]')?.value || '';
-    const idea    = form.querySelector('[name=idea]')?.value || '';
-    const subject = encodeURIComponent('Demande de consultation — ' + name);
-    const body    = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nIdée de tatouage:\n${idea}`);
-    setTimeout(() => {
-      window.location.href = `mailto:studio.moutonoir@gmail.com?subject=${subject}&body=${body}`;
-    }, 500);
+    const nom         = form.querySelector('[name=name]')?.value.trim()      || '';
+    const email       = form.querySelector('[name=email]')?.value.trim()     || '';
+    const telephone   = form.querySelector('[name=phone]')?.value.trim()     || '';
+    const instagram   = form.querySelector('[name=instagram]')?.value.trim() || '';
+    const idea        = form.querySelector('[name=idea]')?.value.trim()      || '';
+    const placement   = form.querySelector('[name=placement]')?.value        || '';
+    const size        = form.querySelector('[name=size]')?.value             || '';
+    const budget      = form.querySelector('[name=budget]')?.value           || '';
+
+    const description = [
+      idea,
+      placement ? `Emplacement: ${placement}` : '',
+      size      ? `Taille: ${size}`            : '',
+      budget    ? `Budget: ${budget}`          : '',
+      instagram ? `Instagram: ${instagram}`    : '',
+    ].filter(Boolean).join('\n');
+
+    try {
+      const res = await fetch('https://studio-mouton-noir.vercel.app/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nom, email, telephone, description }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        btn.textContent = 'Demande envoyée ✓';
+        btn.style.background = '#2d6a3f';
+        form.reset();
+      } else {
+        throw new Error(data.error || 'Erreur');
+      }
+    } catch {
+      btn.textContent = originalText;
+      btn.disabled = false;
+      alert('Une erreur est survenue. Réessaie ou contacte-nous directement.');
+    }
   });
 
 });
