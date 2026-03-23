@@ -285,16 +285,32 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       const data = await res.json();
       if (data.success) {
-        btn.textContent = 'Demande envoyée ✓';
-        btn.style.background = '#2d6a3f';
-        form.reset();
+        // Replace form with success message
+        form.innerHTML = `
+          <div style="text-align:center; padding: 2rem 1rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">✦</div>
+            <p style="font-size: 1.1rem; color: #F3F3F3; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Demande reçue</p>
+            <p style="color: #8A8A8A; font-size: 0.9rem; line-height: 1.6;">
+              Merci ${nom} — on a bien reçu ta demande.<br>
+              On te revient sous peu pour confirmer les détails.
+            </p>
+          </div>
+        `;
       } else {
         throw new Error(data.error || 'Erreur');
       }
     } catch {
       btn.textContent = originalText;
       btn.disabled = false;
-      alert('Une erreur est survenue. Réessaie ou contacte-nous directement.');
+      // Show inline error instead of alert
+      let errEl = form.querySelector('.form-error-msg');
+      if (!errEl) {
+        errEl = document.createElement('p');
+        errEl.className = 'form-error-msg';
+        errEl.style.cssText = 'color:#c0392b; font-size:0.85rem; margin-top:0.75rem; text-align:center;';
+        btn.parentNode.insertBefore(errEl, btn.nextSibling);
+      }
+      errEl.textContent = 'Une erreur est survenue. Réessaie ou écris-nous directement.';
     }
   });
 
