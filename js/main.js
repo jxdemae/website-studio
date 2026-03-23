@@ -288,6 +288,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </p>
           </div>
         `;
+        // Scroll success message into view on mobile
+        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
         throw new Error(data.error || 'Erreur');
       }
