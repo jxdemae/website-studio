@@ -260,28 +260,20 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.textContent = 'Envoi en cours…';
     btn.disabled = true;
 
-    const nom         = form.querySelector('[name=name]')?.value.trim()      || '';
-    const email       = form.querySelector('[name=email]')?.value.trim()     || '';
-    const telephone   = form.querySelector('[name=phone]')?.value.trim()     || '';
-    const instagram   = form.querySelector('[name=instagram]')?.value.trim() || '';
-    const idea        = form.querySelector('[name=idea]')?.value.trim()      || '';
-    const placement   = form.querySelector('[name=placement]')?.value        || '';
-    const size        = form.querySelector('[name=size]')?.value             || '';
-    const budget      = form.querySelector('[name=budget]')?.value           || '';
-
-    const description = [
-      idea,
-      placement ? `Emplacement: ${placement}` : '',
-      size      ? `Taille: ${size}`            : '',
-      budget    ? `Budget: ${budget}`          : '',
-      instagram ? `Instagram: ${instagram}`    : '',
-    ].filter(Boolean).join('\n');
+    const nom       = form.querySelector('[name=name]')?.value.trim()      || '';
+    const email     = form.querySelector('[name=email]')?.value.trim()     || '';
+    const telephone = form.querySelector('[name=phone]')?.value.trim()     || '';
+    const instagram = form.querySelector('[name=instagram]')?.value.trim() || '';
+    const description = form.querySelector('[name=idea]')?.value.trim()   || '';
+    const placement = form.querySelector('[name=placement]')?.value        || '';
+    const taille    = form.querySelector('[name=size]')?.value             || '';
+    const budget    = form.querySelector('[name=budget]')?.value           || '';
 
     try {
       const res = await fetch('https://studio-mouton-noir.vercel.app/api/intake', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nom, email, telephone, description }),
+        body: JSON.stringify({ nom, email, telephone, description, placement, taille, budget, instagram }),
       });
       const data = await res.json();
       if (data.success) {
