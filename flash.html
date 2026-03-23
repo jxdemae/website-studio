@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tatouages Flash — Studio Mouton Noir</title>
+  <meta name="description" content="Designs flash originaux disponibles en quantité limitée au Studio Mouton Noir, Châteauguay, Québec.">
+  <meta property="og:title" content="Tatouages Flash — Studio Mouton Noir">
+  <meta property="og:description" content="Designs flash originaux disponibles en quantité limitée au Studio Mouton Noir, Châteauguay, Québec.">
+  <meta property="og:url" content="https://studiomoutonnoir.ca/flash.html">
+  <link rel="canonical" href="https://studiomoutonnoir.ca/flash.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════ -->
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-img"></div>
+    <div class="nav-logo-text">
+      Studio Mouton Noir
+      <span>100 rue Kepler, Châteauguay</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html#apropos">À propos</a></li>
+    <li><a href="index.html#histoire">Mon histoire</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="flash.html" style="color:var(--offwhite)">Flash ✦</a></li>
+    <li><a href="index.html#processus">Processus</a></li>
+  </ul>
+
+  <a href="index.html#reservation" class="nav-cta">Réserver</a>
+
+  <button class="nav-toggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav -->
+<div class="nav-mobile">
+  <a href="index.html">Accueil</a>
+  <a href="index.html#histoire">Mon histoire</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="flash.html">Tatouages Flash</a>
+  <a href="index.html#reservation">Réserver</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     FLASH HERO
+═══════════════════════════════════════════════════════ -->
+<section class="flash-hero" style="padding: 9rem 3rem 5rem; background: var(--black); border-bottom: 1px solid rgba(243,243,243,0.06);">
+  <p class="section-label reveal">Disponibles maintenant</p>
+  <h1 class="section-title reveal reveal-delay-1" style="font-size: clamp(3rem, 8vw, 7rem); margin-bottom: 1.5rem;">
+    Tatouages<br><span style="color:var(--red)">Flash</span>
+  </h1>
+  <p class="reveal reveal-delay-2" style="color: var(--dim); font-size: 1rem; max-width: 560px; line-height: 1.9;">
+    Des designs originaux créés par Jade — disponibles en quantité limitée.
+    Chaque flash est unique. Une fois tatoué, il est retiré de la liste.
+  </p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FLASH NOTE
+═══════════════════════════════════════════════════════ -->
+<div style="background: var(--charcoal); padding: 3rem; border-bottom: 1px solid rgba(243,243,243,0.06);">
+  <div style="max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;" class="reveal">
+    <div style="border-left: 2px solid var(--red); padding-left: 1.5rem;">
+      <div style="font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem;">Comment ça fonctionne</div>
+      <p style="font-size: 0.9rem; color: var(--dim); line-height: 1.9;">
+        Choisis un design qui te parle. Envoie-moi un message sur Instagram
+        ou par courriel en mentionnant le nom du flash. <strong style="color: var(--offwhite);">Premier arrivé, premier servi.</strong>
+      </p>
+    </div>
+    <div style="border-left: 2px solid rgba(243,243,243,0.1); padding-left: 1.5rem;">
+      <div style="font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--dim); margin-bottom: 0.5rem;">Prix fixe — pas de négociation</div>
+      <p style="font-size: 0.9rem; color: var(--dim); line-height: 1.9;">
+        Les prix des flash sont fixes et incluent la consultation.
+        Un dépôt est requis pour confirmer ton rendez-vous.
+        <a href="index.html#reservation" style="color: var(--red);">Réserver →</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Filters -->
+<div class="portfolio-filters reveal" id="flash-filters" style="padding: 2rem 3rem 1rem;">
+  <button class="filter-btn flash-filter-btn" data-target="cat-botanique_flash">Botanique</button>
+  <button class="filter-btn flash-filter-btn" data-target="cat-realisme_flash">Réalisme</button>
+  <button class="filter-btn flash-filter-btn" data-target="cat-autre_flash">Autre</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     FLASH — BOTANIQUE
+═══════════════════════════════════════════════════════ -->
+<div class="flash-section" id="cat-botanique_flash">
+  <div class="flash-category-title reveal">
+    Botanique & Floral
+    <span class="flash-category-count">6 designs</span>
+  </div>
+
+  <div class="flash-grid" data-stagger>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4636.jpg" alt="Fleurs & Papillon" style="width:100%; height:100%; object-fit:cover; object-position:center;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Fleurs & Papillon</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Botanique · Dos/Bras</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4656.jpg" alt="Oiseaux & Fleurs" style="width:100%; height:100%; object-fit:cover; object-position:center;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Oiseaux & Fleurs</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Floral · Fine Line</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4666.PNG" alt="Main à la Rose" style="width:100%; height:100%; object-fit:cover; object-position:center 35%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Main à la Rose</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Fine Line · Avant-bras</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4711.PNG" alt="Le Tigre Royal" style="width:100%; height:100%; object-fit:cover; object-position:50% 50%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Le Tigre Royal</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Floral & Animal</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4710.PNG" alt="Oiseau & Botanique" style="width:100%; height:100%; object-fit:cover; object-position:50% 50%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Oiseau & Botanique</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Fine Line · Minimaliste</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4712.PNG" alt="Ornemental Floral" style="width:100%; height:100%; object-fit:cover; object-position:center 30%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Ornemental Floral</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Dos / Épaules</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     FLASH — RÉALISME
+═══════════════════════════════════════════════════════ -->
+<div class="flash-section" id="cat-realisme_flash">
+  <div class="flash-category-title reveal">
+    Réalisme
+    <span class="flash-category-count">8 designs</span>
+  </div>
+
+  <div class="flash-grid" data-stagger>
+
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4645.jpg" alt="Portrait Noir & Gris" style="width:100%; height:100%; object-fit:cover; object-position:center;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Portrait Noir & Gris</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Réalisme · Portrait</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4663.PNG" alt="Chat Ying Yang" style="width:100%; height:100%; object-fit:cover; object-position:50% 50%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Chat Ying Yang</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Réalisme Soft</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4675.PNG" alt="Corbeau en Vol" style="width:100%; height:100%; object-fit:cover; object-position:center 40%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Corbeau en Vol</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Réalisme · Noir & Gris</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4676.PNG" alt="Vierge à la Couronne" style="width:100%; height:100%; object-fit:cover; object-position:50% 50%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Vierge à la Couronne</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Réalisme · Portrait</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4686.PNG" alt="Guerrier & Loups" style="width:100%; height:100%; object-fit:cover; object-position:50% 50%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Guerrier & Loups</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Compo Réaliste</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4681.PNG" alt="Portrait Déstructuré" style="width:100%; height:100%; object-fit:cover; object-position:50% 50%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Portrait Déstructuré</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Réalisme Artistique</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4680.PNG" alt="Anges de la Renaissance" style="width:100%; height:100%; object-fit:cover; object-position:center 40%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Anges de la Renaissance</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Statue · Réalisme</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4657.jpg" alt="Fleurs Réalistes" style="width:100%; height:100%; object-fit:cover; object-position:center;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Fleurs Réalistes</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Réalisme Soft</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     FLASH — AUTRE / TYPO
+═══════════════════════════════════════════════════════ -->
+<div class="flash-section" id="cat-autre_flash">
+  <div class="flash-category-title reveal">
+    Autre
+    <span class="flash-category-count">6 designs</span>
+  </div>
+
+  <div class="flash-grid" data-stagger>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4687.PNG" alt="Tigre au Masque" style="width:100%; height:100%; object-fit:cover; object-position:50% 50%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Tigre au Masque</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Illustratif · Unique</div>
+      </div>
+    </div>
+
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4677.PNG" alt="Mains & Éclat" style="width:100%; height:100%; object-fit:cover; object-position:center 40%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Mains & Éclat</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Fine Line · Avant-bras</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4662.PNG" alt="Crabe à l'Oeil" style="width:100%; height:100%; object-fit:cover; object-position:center 40%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Crabe à l'Oeil</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Gravure · Unique</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4713.PNG" alt="Oiseaux Chest" style="width:100%; height:100%; object-fit:cover; object-position:center 30%;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Oiseaux Chest</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Ornemental · Chest</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4658.jpg" alt="Chérubin Penseur" style="width:100%; height:100%; object-fit:cover; object-position:center;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Chérubin Penseur</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Fine Line Renaissance</div>
+      </div>
+    </div>
+    <div class="flash-item" data-stagger-child style="opacity:0; transform:translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div class="flash-item-bg"><img src="IMG_4653.jpg" alt="Sculpture Angelique" style="width:100%; height:100%; object-fit:cover; object-position:center;"></div>
+      <div class="flash-item-badge">Disponible</div>
+      <div class="flash-item-overlay">
+        <div class="flash-item-name">Sculpture Angelique</div>
+        <div class="flash-item-price">Sur demande</div>
+        <div class="flash-item-avail">Statue · Fine Line</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA
+═══════════════════════════════════════════════════════ -->
+<div style="background: var(--charcoal); padding: 5rem 3rem; text-align: center; border-top: 1px solid rgba(243,243,243,0.06);">
+  <p class="section-label reveal" style="justify-content: center;">Tu vois quelque chose qui te parle?</p>
+  <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 1.5rem; text-align: center;">Réserve ton<br>flash maintenant.</h2>
+  <p class="reveal reveal-delay-2" style="color: var(--dim); margin-bottom: 2.5rem; font-size: 0.95rem;">
+    Contacte-moi via Instagram ou par courriel en mentionnant le nom du design.
+  </p>
+  <div class="reveal reveal-delay-3" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="https://www.instagram.com/studiomoutonoir/" target="_blank" rel="noopener" class="btn-primary">Contacter sur Instagram</a>
+    <a href="index.html#reservation" class="btn-outline">Remplir le formulaire</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-bottom" style="padding-top: 3rem; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem;">
+    <div class="nav-logo-img" style="width:100px; height:100px; border:none; margin-bottom: 0.5rem;"></div>
+    <a href="index.html" style="font-family:'Barlow Condensed',sans-serif; font-size:1.2rem; font-weight:900; letter-spacing:0.1em; text-transform:uppercase;">Studio Mouton Noir</a>
+    <p style="font-size: 0.75rem; color: var(--dim);">100 rue Kepler, Châteauguay &nbsp;·&nbsp; <a href="mailto:studio.moutonoir@gmail.com" style="color:var(--dim)">studio.moutonoir@gmail.com</a></p>
+    <a href="https://www.instagram.com/studiomoutonoir/" target="_blank" rel="noopener" class="social-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Retour en haut">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

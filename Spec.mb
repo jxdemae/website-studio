@@ -1,0 +1,286 @@
+PROJECT: Studio Mouton Noir Tattoo Website
+
+Build a modern, high-end website for a tattoo studio called:
+
+Studio Mouton Noir
+
+Location:
+Châteauguay, Quebec, Canada
+
+Contact email:
+studio.moutonoir@gmail.com
+
+Instagram:
+https://www.instagram.com/studiomoutonoir/
+
+------------------------------------------------
+
+BRAND PHILOSOPHY
+
+“L'art de ne pas faire comme les autres.”
+
+The black sheep is the one who stands apart, who embraces who they are and transforms their difference into strength.
+
+Studio Mouton Noir is a creative tattoo studio where every tattoo is designed to express individuality.
+
+The studio is not about mass production or generic flash tattoos.
+
+Each piece is intentional, personal, and artistic.
+
+The website should communicate:
+
+individuality  
+creativity  
+rebellion  
+artistry  
+identity
+
+Tone should feel artistic, modern, and slightly rebellious — like a tattoo studio combined with a contemporary art gallery.
+
+Visitors should feel like they are entering a creative space, not just a service business.
+
+------------------------------------------------
+
+DESIGN DIRECTION
+
+The design should be dark, minimal, editorial and premium.
+
+Visual inspiration:
+
+modern tattoo studios  
+fashion brand websites  
+underground art studios
+
+Color palette:
+
+#0A0A0A (black)
+#161616 (charcoal)
+#F3F3F3 (off white)
+muted red accent
+
+Typography:
+
+Headlines:
+bold condensed font
+strong visual presence
+
+Body:
+modern sans serif
+clean and readable
+
+Design characteristics:
+
+large imagery
+lots of negative space
+smooth scrolling
+subtle animations
+hover effects for portfolio items
+
+The website should feel high-end and artistic.
+
+------------------------------------------------
+
+WEBSITE STRUCTURE
+
+1. HERO SECTION
+
+Full screen hero.
+
+Background:
+video or large image of tattooing process.
+
+Headline:
+
+L'art de ne pas faire comme les autres.
+
+Subheadline:
+
+Le mouton noir, c’est celui qui se démarque.
+Celui qui assume qui il est.
+
+Au Studio Mouton Noir, chaque tatouage est une façon d’exprimer ton identité.
+
+Primary buttons:
+
+Voir les artistes
+Prendre rendez-vous
+
+------------------------------------------------
+
+2. ABOUT / PHILOSOPHY
+
+Title:
+
+Pourquoi “Mouton Noir”?
+
+Text:
+
+Le mouton noir, c’est celui qui ne suit pas le troupeau — celui qui se démarque, qui assume qui il est, qui transforme sa différence en force.
+
+Au Studio Mouton Noir, chaque tatouage est une façon d’exprimer ton individualité.
+
+On ne fait pas simplement de l’encre sur la peau.
+
+On raconte ton histoire.
+
+C’est un espace créatif, sans jugement, où chaque design est pensé avec intention et personnalité.
+
+Ici, tu n’es pas un client parmi d’autres.
+
+Tu es l’œuvre.
+
+------------------------------------------------
+
+3. ARTISTS
+
+Display a grid of tattoo artists.
+
+Each artist card should include:
+
+photo
+name
+tattoo style
+Instagram link
+button to view portfolio
+
+Artist pages should include:
+
+bio
+style description
+tattoo gallery
+booking button
+
+------------------------------------------------
+
+4. PORTFOLIO
+
+Create a gallery of tattoos.
+
+Grid layout with hover effects.
+
+When hovering:
+
+show artist name
+tattoo style
+
+Images should be large and high quality.
+
+------------------------------------------------
+
+5. TATTOO PROCESS
+
+Explain the tattoo journey.
+
+Section with 4 steps.
+
+Consultation  
+We discuss your idea and inspiration.
+
+Design  
+We create a custom design that fits your vision.
+
+Tattoo Session  
+Your tattoo is created in a professional and safe environment.
+
+Aftercare  
+We guide you through the healing process.
+
+------------------------------------------------
+
+6. BOOKING / CONSULTATION
+
+Create a booking form.
+
+Fields:
+
+Name
+Email
+Tattoo idea
+Placement on body
+Size
+Budget
+Reference images upload
+
+Submit button:
+
+Réserver une consultation
+
+Form submissions should send an email to:
+
+studio.moutonoir@gmail.com
+
+------------------------------------------------
+
+7. INSTAGRAM SECTION
+
+Embed or dynamically pull posts from:
+
+https://www.instagram.com/studiomoutonoir/
+
+Display latest tattoo posts in a grid.
+
+------------------------------------------------
+
+8. LOCATION
+
+Map section.
+
+Show:
+
+Studio Mouton Noir
+Châteauguay, Québec
+
+Include contact email:
+
+studio.moutonoir@gmail.com
+
+------------------------------------------------
+
+FOOTER
+
+Include:
+
+Studio Mouton Noir
+Châteauguay, Québec
+
+Instagram link
+
+Email:
+
+studio.moutonoir@gmail.com
+
+------------------------------------------------
+
+TECHNICAL REQUIREMENTS
+
+Site must be:
+
+mobile first
+fast loading
+SEO friendly
+clean modern layout
+
+Animations should be subtle and smooth.
+
+Use modern responsive design.
+
+Images should scale properly on mobile.
+
+The site should feel premium and artistic.
+
+------------------------------------------------
+
+GOAL OF THE WEBSITE
+
+The main goal is to:
+
+1. showcase tattoo artistry
+2. express the brand philosophy
+3. drive consultation bookings
+
+Visitors should feel inspired to book a tattoo consultation.
+
+The site should feel like entering a creative tattoo studio rather than a traditional business website.
+One small but powerful thing you should add later
+Tell Claude to also create:
+a “Flash Tattoos” page

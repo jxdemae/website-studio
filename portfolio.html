@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Studio Mouton Noir</title>
+  <meta name="description" content="Découvrez les réalisations de Jade au Studio Mouton Noir : Réalisme, Fine Line et Botanique.">
+  <meta property="og:title" content="Portfolio — Studio Mouton Noir">
+  <meta property="og:description" content="Découvrez les réalisations de Jade au Studio Mouton Noir : Réalisme, Fine Line et Botanique.">
+  <meta property="og:url" content="https://studiomoutonnoir.ca/portfolio.html">
+  <link rel="canonical" href="https://studiomoutonnoir.ca/portfolio.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════ -->
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-img"></div>
+    <div class="nav-logo-text">
+      Studio Mouton Noir
+      <span>100 rue Kepler, Châteauguay</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html#apropos">À propos</a></li>
+    <li><a href="index.html#histoire">Mon histoire</a></li>
+    <li><a href="portfolio.html" style="color:var(--offwhite)">Portfolio ✦</a></li>
+    <li><a href="flash.html">Flash</a></li>
+    <li><a href="index.html#processus">Processus</a></li>
+  </ul>
+
+  <a href="index.html#reservation" class="nav-cta">Réserver</a>
+
+  <button class="nav-toggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav -->
+<div class="nav-mobile">
+  <a href="index.html">Accueil</a>
+  <a href="index.html#histoire">Mon histoire</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="flash.html">Tatouages Flash</a>
+  <a href="index.html#reservation">Réserver</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     PORTFOLIO HERO
+═══════════════════════════════════════════════════════ -->
+<section class="flash-hero" style="padding: 9rem 3rem 5rem; background: var(--black); border-bottom: 1px solid rgba(243,243,243,0.06);">
+  <p class="section-label reveal">Mes réalisations</p>
+  <h1 class="section-title reveal reveal-delay-1" style="font-size: clamp(3rem, 8vw, 7rem); margin-bottom: 1.5rem;">
+    Mon<br><span style="color:var(--red)">Portfolio</span>
+  </h1>
+  <p class="reveal reveal-delay-2" style="color: var(--dim); font-size: 1rem; max-width: 560px; line-height: 1.9;">
+    Explorez une sélection de tatouages réalisés par Jade. Spécialisée en réalisme noir et gris, fine line et compositions botaniques.
+  </p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     PORTFOLIO CONTENT
+═══════════════════════════════════════════════════════ -->
+<section class="portfolio" id="portfolio_content" style="padding: 5rem 3rem;">
+  <!-- Filters -->
+  <div class="portfolio-filters reveal">
+    <button class="filter-btn active" data-filter="all">Tout</button>
+    <button class="filter-btn" data-filter="realisme">Réalisme</button>
+    <button class="filter-btn" data-filter="fineline">Fine Line</button>
+    <button class="filter-btn" data-filter="botanique">Botanique</button>
+    <button class="filter-btn" data-filter="autre">Autre</button>
+  </div>
+
+  <!-- ── RÉALISME ── -->
+  <p class="portfolio-section-label reveal" id="cat-realisme">Réalisme</p>
+  <div class="portfolio-grid" data-stagger style="margin-bottom: 6rem;">
+    <!-- Mike Tyson (Main Image) -->
+    <div class="portfolio-item item-tall" data-style="realisme" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4621.jpg" alt="Portrait réalisme Mike Tyson" class="mobile-pos-tyson" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Réalisme</div>
+      </div>
+    </div>
+    <!-- Woody -->
+    <div class="portfolio-item" data-style="realisme" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4651.jpg" alt="Portrait réalisme Woody" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Réalisme</div>
+      </div>
+    </div>
+    <!-- Michelangelo -->
+    <div class="portfolio-item item-wide" data-style="realisme" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4637.jpg" alt="Ange Michel-Ange réalisme" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Réalisme</div>
+      </div>
+    </div>
+    <!-- Capricorn -->
+    <div class="portfolio-item" data-style="realisme" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4630.jpg" alt="Capricorne réalisme" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Réalisme</div>
+      </div>
+    </div>
+    <!-- Ctrl+Z Hand -->
+    <div class="portfolio-item" data-style="realisme" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4718.jpg" alt="Main réalisme touches clavier Ctrl+Z" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Réalisme</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BOTANIQUE ── -->
+  <p class="portfolio-section-label reveal" id="cat-botanique">Botanique</p>
+  <div class="portfolio-grid" data-stagger style="margin-bottom: 6rem;">
+    <!-- Spine Flowers -->
+    <div class="portfolio-item item-tall" data-style="botanique" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4624.jpg" alt="Fleurs botaniques colonne vertébrale" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Botanique</div>
+      </div>
+    </div>
+    <!-- Rose + Cross -->
+    <div class="portfolio-item" data-style="botanique" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4639.jpg" alt="Rose et croix fine line" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Botanique</div>
+      </div>
+    </div>
+    <!-- Broken Vase Rose -->
+    <div class="portfolio-item item-wide" data-style="botanique" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4640.jpg" alt="Rose dans un vase brisé" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Botanique</div>
+      </div>
+    </div>
+    <!-- Chest Flowers -->
+    <div class="portfolio-item" data-style="botanique" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4634.jpg" alt="Fleurs botaniques chest" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Botanique</div>
+      </div>
+    </div>
+    <!-- Arm Peonies -->
+    <div class="portfolio-item" data-style="botanique" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4629.jpg" alt="Pivoines bras" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Botanique</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FINE LINE ── -->
+  <p class="portfolio-section-label reveal" id="cat-fineline">Fine Line</p>
+  <div class="portfolio-grid" data-stagger style="margin-bottom: 6rem;">
+    <!-- Dagger/Sword -->
+    <div class="portfolio-item" data-style="fineline" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4647.jpg" alt="Dague fine line" style="width:100%;height:100%;object-fit:cover;object-position:center 35%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Fine Line</div>
+      </div>
+    </div>
+    <!-- Hand/Flower -->
+    <div class="portfolio-item item-wide" data-style="fineline" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4654.jpg" alt="Main et fleur fine line" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Fine Line</div>
+      </div>
+    </div>
+
+    <!-- Birds 1977 -->
+    <div class="portfolio-item" data-style="fineline" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4623.jpg" alt="Oiseaux et année 1977 fine line" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Fine Line</div>
+      </div>
+    </div>
+    <!-- Stay Wild Hand -->
+    <div class="portfolio-item" data-style="fineline" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4625.jpg" alt="Main stay wild fine line" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Fine Line</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── AUTRE ── -->
+  <p class="portfolio-section-label reveal" id="cat-autre">Autre</p>
+  <div class="portfolio-grid" data-stagger>
+    <!-- Tiger/Snake -->
+    <div class="portfolio-item item-wide" data-style="autre" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4622.jpg" alt="Tête de tigre et serpent rouge" class="mobile-pos-tiger" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Autre</div>
+      </div>
+    </div>
+    <!-- Bear -->
+    <div class="portfolio-item" data-style="autre" data-stagger-child style="opacity:0; transition:opacity 0.5s ease;">
+      <div class="portfolio-item-bg"><img src="IMG_4633.jpg" alt="Ours fine line" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;"></div>
+      <div class="portfolio-item-overlay">
+        <div class="portfolio-item-artist">Jade</div>
+        <div class="portfolio-item-style">Autre</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA
+═══════════════════════════════════════════════════════ -->
+<div style="background: var(--charcoal); padding: 5rem 3rem; text-align: center; border-top: 1px solid rgba(243,243,243,0.06);">
+  <p class="section-label reveal" style="justify-content: center;">Prêt pour ton prochain projet?</p>
+  <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 1.5rem; text-align: center;">Réserve ta<br>séance ici.</h2>
+  <div class="reveal reveal-delay-3" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="index.html#reservation" class="btn-primary">Prendre rendez-vous</a>
+    <a href="https://www.instagram.com/studiomoutonoir/" target="_blank" rel="noopener" class="btn-outline">Suivre sur Instagram</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-bottom" style="padding-top: 3rem; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem;">
+    <div class="nav-logo-img" style="width:100px; height:100px; border:none; margin-bottom: 0.5rem;"></div>
+    <a href="index.html" style="font-family:'Barlow Condensed',sans-serif; font-size:1.2rem; font-weight:900; letter-spacing:0.1em; text-transform:uppercase;">Studio Mouton Noir</a>
+    <p style="font-size: 0.75rem; color: var(--dim);">100 rue Kepler, Châteauguay &nbsp;·&nbsp; <a href="mailto:studio.moutonoir@gmail.com" style="color:var(--dim)">studio.moutonoir@gmail.com</a></p>
+    <a href="https://www.instagram.com/studiomoutonoir/" target="_blank" rel="noopener" class="social-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Retour en haut">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
