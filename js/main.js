@@ -260,11 +260,11 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.textContent = 'Envoi en cours…';
     btn.disabled = true;
 
-    // --- Extraire les valeurs ---
+    // --- Extraire les valeurs (avec placeholders pour champs optionnels) ---
     const nom       = form.querySelector('[name=name]')?.value.trim()      || '';
     const email     = form.querySelector('[name=email]')?.value.trim()     || '';
-    const telephone = form.querySelector('[name=phone]')?.value.trim()     || '';
-    const instagram = form.querySelector('[name=instagram]')?.value.trim() || '';
+    const telephone = form.querySelector('[name=phone]')?.value.trim()     || 'Non spécifié';
+    const instagram = form.querySelector('[name=instagram]')?.value.trim() || 'Non spécifié';
     const description = form.querySelector('[name=idea]')?.value.trim()   || '';
     const placement = form.querySelector('[name=placement]')?.value        || '';
     const taille    = form.querySelector('[name=size]')?.value             || '';
