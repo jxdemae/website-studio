@@ -260,6 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.textContent = 'Envoi en cours…';
     btn.disabled = true;
 
+    // --- Extraire les valeurs ---
     const nom       = form.querySelector('[name=name]')?.value.trim()      || '';
     const email     = form.querySelector('[name=email]')?.value.trim()     || '';
     const telephone = form.querySelector('[name=phone]')?.value.trim()     || '';
@@ -269,18 +270,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const taille    = form.querySelector('[name=size]')?.value             || '';
     const budget    = form.querySelector('[name=budget]')?.value           || '';
 
+    // --- Configuration pour FormSubmit (Envoi email avec pièces jointes) ---
+    const formData = new FormData(form);
+    formData.append('_subject', `Nouvelle demande de consultation - ${nom}`);
+    formData.append('_captcha', 'false'); // Désactiver le captcha redirigeant
+    formData.append('_template', 'table'); // Format de courriel clair
+
     try {
-      const res = await fetch('https://studio-mouton-noir.vercel.app/api/intake', {
+      // 1. Envoi au Vercel API (Dashboard)
+      const vercelPromise = fetch('https://studio-mouton-noir.vercel.app/api/intake', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nom, email, telephone, description, placement, taille, budget, instagram }),
-      });
-      const data = await res.json();
+      }).then(r => r.json());
+
+      // 2. Envoi à FormSubmit (Courriel au Studio)
+      const formSubmitPromise = fetch('https://formsubmit.co/ajax/studio.moutonoir@gmail.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      }).then(r => r.json()).catch(err => console.error("FormSubmit Error:", err));
+
+      // On attend la réponse du dashboard Vercel
+      const data = await vercelPromise;
+      await formSubmitPromise; // On n'échoue pas si le courriel a une erreur mineure
+
       if (data.success) {
-        // Replace form with success message
+        // Message de succès
         form.innerHTML = `
           <div style="text-align:center; padding: 2rem 1rem;">
-            <div style="font-size: 2.5rem; margin-bottom: 1rem;">✦</div>
+            <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #C8860F;">✦</div>
             <p style="font-size: 1.1rem; color: #F3F3F3; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Demande reçue</p>
             <p style="color: #8A8A8A; font-size: 0.9rem; line-height: 1.6;">
               Merci ${nom} — on a bien reçu ta demande.<br>
@@ -291,12 +310,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Scroll success message into view on mobile
         form.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
-        throw new Error(data.error || 'Erreur');
+        throw new Error(data.error || 'Erreur API Vercel');
       }
     } catch {
       btn.textContent = originalText;
       btn.disabled = false;
-      // Show inline error instead of alert
       let errEl = form.querySelector('.form-error-msg');
       if (!errEl) {
         errEl = document.createElement('p');
@@ -304,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
         errEl.style.cssText = 'color:#c0392b; font-size:0.85rem; margin-top:0.75rem; text-align:center;';
         btn.parentNode.insertBefore(errEl, btn.nextSibling);
       }
-      errEl.textContent = 'Une erreur est survenue. Réessaie ou écris-nous directement.';
+      errEl.textContent = 'Une erreur est survenue. Réessaie ou écris-nous directement à studio.moutonoir@gmail.com.';
     }
   });
 
