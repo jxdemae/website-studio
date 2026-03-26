@@ -1363,7 +1363,7 @@ footer {
   .nav { padding: 1.2rem 1.5rem; }
   .nav.scrolled { padding: 0.9rem 1.5rem; }
   .nav-links, .nav-cta { display: none; }
-  .nav-toggle { display: flex; }
+  .nav-toggle { display: flex; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
 
   .hero { padding: 0 1.5rem 4rem; }
   .hero-scroll { display: none; }
@@ -1373,17 +1373,26 @@ footer {
   }
   .portfolio-grid .item-wide { grid-column: span 1; }
 
+  /* Fix portfolio filters negative margin to match 1.5rem section padding */
+  .portfolio-filters { margin: 0 -1.5rem; }
+
   .instagram-grid { grid-template-columns: repeat(3, 1fr); }
 
   .location-inner { grid-template-columns: 1fr; }
   .location-map { height: 350px; }
 
   .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+
+  /* Flash page mobile */
+  .flash-hero { padding-top: 7rem; padding-left: 1.5rem; padding-right: 1.5rem; }
+  .flash-intro { padding: 2.5rem 1.5rem; }
+  .flash-category-title { padding: 2rem 1.5rem 1rem; font-size: 1.5rem; }
+  .flash-note { padding: 2rem 1.5rem; margin: 0 0 2rem; }
 }
 
 @media (max-width: 600px) {
-  .portfolio-grid { 
-    grid-template-columns: 1fr; 
+  .portfolio-grid {
+    grid-template-columns: 1fr;
     grid-auto-rows: 380px;
   }
   .portfolio-grid .item-tall { grid-row: span 1; }
@@ -1396,17 +1405,38 @@ footer {
     object-position: center 35% !important;
   }
 
-
   .process-steps { grid-template-columns: 1fr; }
 
   .form-row { grid-template-columns: 1fr; }
+
+  /* Prevent iOS auto-zoom on form focus */
+  .form-input,
+  .form-textarea,
+  .form-select { font-size: 1rem; }
 
   .instagram-grid { grid-template-columns: repeat(2, 1fr); }
 
   .about { padding: 4rem 1.5rem; }
   .flash-banner { padding: 3rem 1.5rem; }
+  .flash-banner-text .title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
 
   .artists-header { flex-direction: column; align-items: flex-start; }
+
+  /* Hero actions stack on small screens */
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-outline { width: 100%; text-align: center; }
+
+  /* Back to top closer to edge */
+  .back-top { bottom: 1.2rem; right: 1.2rem; }
+}
+
+@media (max-width: 400px) {
+  section { padding: 3.5rem 1rem; }
+  .hero { padding: 0 1rem 3rem; }
+  .nav { padding: 1rem; }
+  .nav.scrolled { padding: 0.8rem 1rem; }
+  .location-map { height: 220px; }
 }
 
 /* ============================================================
